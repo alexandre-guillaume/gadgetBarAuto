@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="AVV Auto" title_url="http://www.soprasteria.com"
+		directory_title="SopraGadget" author="Brandon Gommard" author_email="brandon.gommard@soprasteria.com"
+		author_affiliation="Sopra Steria" author_link="http://www.soprasteria.com"
+		description="Ce gadget se connecte au Google Analytics spécifié en paramètres et affiche le nombre de réalisation du ou des objectifs demandés en paramètre sous forme d'histogramme " 
+		author_photo="/GadgetGABarAuto/soprasteria.png" screenshot="/GadgetGABarAuto/logo-auto.png" thumbnail="/GadgetGABarAuto/logo-auto.png"
+		>
+	</ModulePrefs>
+	<Require feature="setprefs" />
+
+	<UserPref name="metrique" display_name="Métrique" datatype="string"
+		urlparam="dimension" required="true" default_value="goal1Completions" />
+		
+		<UserPref name="refreshTime" display_name="Rafraichissement (min)" datatype="string"
+		urlparam="refreshTime" required="true" default_value="15" />
+		
+		<UserPref name="couleur1" display_name="Couleur 1" datatype="string"
+		urlparam="col1" required="true" default_value="blue" />
+		
+		<UserPref name="couleur2" display_name="Couleur 2" datatype="string"
+		urlparam="col2" required="true" default_value="lightblue" />
+		
+   <UserPref name="siteAsuivre"
+   			 display_name="Identifiant du Site à suivre"
+   			 datatype="string"
+   			 urlparam="id2"
+   			 required="true" 
+   			 default_value="ga:35918330"/>
+
+	<Content type="url" href="/GadgetGABarAuto/AffichageAuto">
+	</Content>
+</Module>

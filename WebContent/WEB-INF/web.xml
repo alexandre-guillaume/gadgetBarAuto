@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>GadgetGABarAuto</display-name>
+  <servlet>
+    <servlet-name>AffichageGABarAuto</servlet-name>
+    <servlet-class>com.sopra.AffichageAuto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AffichageGABarAuto</servlet-name>
+    <url-pattern>/AffichageAuto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RafraichirAuto</servlet-name>
+    <servlet-class>com.sopra.RafraichirAuto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RafraichirAuto</servlet-name>
+    <url-pattern>/RafraichirAuto</url-pattern>
+  </servlet-mapping>
+</web-app>
